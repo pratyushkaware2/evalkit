@@ -1,0 +1,30 @@
+[project]
+name = "evalkit"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "pratyushkaware2", email = "kawarepratyush@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "datasets>=4.8.5",
+    "huggingface-hub>=1.17.0",
+    "pyarrow>=24.0.0",
+    "pydantic>=2.13.4",
+    "typer>=0.25.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.17,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.15.15",
+]
+
+[project.scripts]
+evalkit = "evalkit.cli:app"
