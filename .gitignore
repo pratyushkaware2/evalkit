@@ -35,11 +35,31 @@ venv.bak/
 # IDE / Editors
 .vscode/
 .idea/
+*.code-workspace
+
+# Vim / Neovim
 *.swp
 *.swo
+*.swn
 *~
+.*.sw?
+.netrwhist
+Session.vim
+Sessionx.vim
+.vim/
+tags
+tags.lock
+tags.temp
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# OS
 .DS_Store
-*.code-workspace
+Thumbs.db
+Desktop.ini
 
 # Testing
 .pytest_cache/
